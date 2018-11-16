@@ -4,9 +4,6 @@ public class Image {
 
     private String imageName;
 
-    /**
-     *
-     */
     public Image() {
     }
 
