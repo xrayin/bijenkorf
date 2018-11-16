@@ -5,21 +5,16 @@ import org.springframework.core.io.InputStreamResource;
 import org.springframework.http.*;
 import org.springframework.stereotype.Service;
 import org.springframework.http.ResponseEntity;
-
 import javax.servlet.ServletContext;
 import java.io.InputStream;
 
 @Service
 public class ImageService {
 
-    /**
-     *
-     */
     @Autowired
     private ServletContext servletContext;
 
     /**
-     *
      * @param image A string containing image name with extension
      * @return Retrieved image file from the images folder with HTTP headers set to image meta data.
      * @throws Exception
@@ -39,7 +34,6 @@ public class ImageService {
     }
 
     /**
-     *
      * @param image A string containing image name with extension
      * @return Image location based on image name that has been received
      */
@@ -49,7 +43,6 @@ public class ImageService {
     }
 
     /**
-     *
      * @param image
      * @return Mimetype based on image name that has been received
      */

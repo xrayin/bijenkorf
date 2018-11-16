@@ -8,16 +8,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class ImageController {
 
-    /**
-     *
-     */
     @Autowired
     private ImageService imageService;
 
     /**
-     *
      * @param image A string containing image name with extension
-     * @return
+     * @return Retrieved image file from ImageService
      * @throws Exception
      */
     @GetMapping("/images/{image}")

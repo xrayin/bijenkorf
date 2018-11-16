@@ -1,17 +1,8 @@
 package com.raja.bijenkorf.image;
 
-
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
 public class Image {
 
-    /**
-     *
-     */
-    @Id
-    private String image;
+    private String imageName;
 
     /**
      *
@@ -20,30 +11,27 @@ public class Image {
     }
 
     /**
-     *
-     * @param image A string containing image name with extension
+     * @param image A string containing imageName name with extension
      */
     public Image(String image) {
 
         super();
-        this.image = image;
+        this.imageName = image;
     }
 
     /**
-     *
-     * @return image variable containing image name with extension
+     * @return imageName variable containing imageName name with extension
      */
-    public String getImage() {
+    public String getImageName() {
 
-        return image;
+        return imageName;
     }
 
     /**
-     *
-     * @param image A string containing image name with extension
+     * @param imageName A string containing imageName name with extension
      */
-    public void setImage(String image) {
+    public void setImageName(String imageName) {
 
-        this.image = image;
+        this.imageName = imageName;
     }
 }
